@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="favicon.png" rel="icon" type="image/png" />
+    <title>Área do Aluno</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      function validarLogin(event) {
+        event.preventDefault();
+
+        alert("Login bem-sucedido!");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="menu">
+      <a class="logomenu" href="index.html"></a>
+      <div class="botoesmenu">
+        <a class="ab123" href="index.html">Inicio</a>
+        <a class="ab123" href="cursos.html">Cursos</a>
+        <a class="ab123" href="projetos.html">Projetos</a>
+
+        <div class="b4menu">
+          <a href="https://wa.me/5511999999999" target="_blank">
+            <img src="whatsapp.png" alt="WhatsApp" />
+          </a>
+        </div>
+
+        <div class="b5menu">
+          <a href="https://instagram.com" target="_blank">
+            <img src="instagram.png" alt="Instagram" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <a href="index.html">
+      <div class="voltar-artigos">Voltar para o Inicio</div>
+    </a>
+
+    <div class="login-container">
+      <div class="login-box">
+        <h2>Área do Aluno</h2>
+        <p>Por favor, insira seu RM e senha para acessar sua área.</p>
+        <form onsubmit="validarLogin(event)">
+          <input type="text" name="rm" placeholder="RM" required />
+          <input type="password" name="senha" placeholder="Senha" required />
+          <input type="submit" value="Login" />
+        </form>
+        <div class="forgot-password">
+          <a href="#">Esqueceu a senha?</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

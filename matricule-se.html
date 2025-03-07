@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="favicon.png" rel="icon" type="image/png" />
+    <title>Matricule-se</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      function matricula(event) {
+        event.preventDefault();
+
+        alert(
+          "Obrigado por demonstrar interesse! Em breve entraremos em contato."
+        );
+      }
+    </script>
+  </head>
+  <body>
+    <div class="menu">
+      <a class="logomenu" href="index.html"></a>
+      <div class="botoesmenu">
+        <a class="ab123" href="index.html">Início</a>
+        <a class="ab123" href="cursos.html">Cursos</a>
+        <a class="ab123" href="projetos.html">Projetos</a>
+        <div class="b4menu">
+          <a href="https://wa.me/5511999999999" target="_blank">
+            <img src="whatsapp.png" alt="WhatsApp" />
+          </a>
+        </div>
+        <div class="b5menu">
+          <a href="https://instagram.com" target="_blank">
+            <img src="instagram.png" alt="Instagram" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <a href="index.html">
+      <div class="voltar-artigos">Voltar para o Início</div>
+    </a>
+
+    <div class="formulario-matricula">
+      <h2>Matricule-se</h2>
+      <form method="POST" onsubmit="matricula(event)">
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" required />
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" required />
+
+        <label for="curso">Curso de Interesse:</label>
+        <select id="curso" required>
+          <option value="">Selecione um curso</option>
+          <option value="Ensino Infantil">Ensino Infantil</option>
+          <option value="Ensino Fundamental I">Ensino Fundamental I</option>
+          <option value="Ensino Fundamental II">Ensino Fundamental II</option>
+          <option value="Ensino Médio com Aprofundamento em Ciências">
+            Ensino Médio com Aprofundamento em Ciências
+          </option>
+          <option value="Ensino Médio com Aprofundamento em Humanidades">
+            Ensino Médio com Aprofundamento em Humanidades
+          </option>
+          <option value="Ensino Médio com Aprofundamento em Matemática">
+            Ensino Médio com Aprofundamento em Matemática
+          </option>
+          <option value="Ensino Médio com Técnico em Contabilidade">
+            Ensino Médio com Técnico em Contabilidade
+          </option>
+          <option
+            value="Ensino Médio com Técnico em Desenvolvimento de Sistemas"
+          >
+            Ensino Médio com Técnico em Desenvolvimento de Sistemas
+          </option>
+          <option value="Ensino Médio com Aprofundamento em Ciências">
+            Ensino Médio com Aprofundamento em Ciências
+          </option>
+          <option value="Ensino Médio com Técnico em Recursos Humanos">
+            Ensino Médio com Técnico em Recursos Humanos
+          </option>
+        </select>
+
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" required min="2" />
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea
+          id="mensagem"
+          rows="4"
+          placeholder="Escreva aqui suas dúvidas ou observações..."
+        ></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </body>
+</html>
